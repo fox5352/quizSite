@@ -17,7 +17,7 @@ $(document).ready(function () {
 
 
     async function request() {
-        data = await fetch('https://github.com/fox5352/quizWebPage/blob/data-storage/listOfQuestions.json').then(response => response.json());
+        data = await fetch('listOfQuestions.json').then(response => response.json());
         pageload();
     }
 
@@ -46,6 +46,7 @@ $(document).ready(function () {
     function removeActiveClasses() {
         if (comparePageNum === 12) {
             questionPage.innerHTML = `congrats on completing the quiz <br> <span>your score is : ${score}</span>`
+            $('.checkbox').empty()
         }
         if (pageNum != el.length) {
             el[pageNum].classList.remove('active');
