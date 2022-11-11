@@ -22,21 +22,18 @@ $(document).ready(function () {
     }
 
     function getAnswer() {
+        randNum = 0
         if (pageNum < 12) {
-            let checkbox = $('.inputbox')
-            let answer = data["qestion" + String(comparePageNum)][0]['answer']
+            let checkbox = $('.inputbox');
+            let answer = data["qestion" + String(comparePageNum)][0]['answer'];
             for (let i = 0; i < checkbox.length; i++) {
                 if (checkbox[i].checked) {
-                    console.log()
                     if (checkbox[i].name == answer) {
-                        console.log(checkbox[i].name, answer);
-                        randNum = 1
+                        randNum = 1;
                     }
                     else {
-                        console.log(checkbox[i].name, answer);
-                        randNum = 0
+                        randNum = 0;
                     }
-                    console.log(randNum);
                 }
             }
 
@@ -45,8 +42,8 @@ $(document).ready(function () {
 
     function removeActiveClasses() {
         if (comparePageNum === 12) {
-            questionPage.innerHTML = `congrats on completing the quiz <br> <span>your score is : ${score}</span>`
-            $('.checkbox').empty()
+            questionPage.innerHTML = `congrats on completing the quiz <br> <span>your score is : ${score}/${pageNum}</span>`
+            const test = $('.checkbox').empty()
         }
         if (pageNum != el.length) {
             el[pageNum].classList.remove('active');
