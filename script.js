@@ -48,11 +48,6 @@ $(document).ready(function () {
 
     // manages what/when Effects and text gets shown on the screen.
     function classesManager() {
-        // checks if you've completed the quiz 
-        if (comparePageNum === 12) {
-            questionPage.innerHTML = `congrats on completing the quiz <br> <span>your score is : ${score + 1}/${pageNum + 1}</span>`
-            const test = $('.checkbox').empty()
-        }
         // checks to see if the page number is != to the length of the questioner
         if (pageNum <= el.length) {
             el[pageNum].classList.remove('active');// removes the active class to add it to the next element
@@ -75,7 +70,7 @@ $(document).ready(function () {
         }
 
         // if comparePageNum is = to the arrays length then the button's text gets change to next
-        if (comparePageNum === el.length) {
+        if (comparePageNum === el.length + 1) {
             document.querySelector('#next').innerHTML = "End";
             document.querySelector('#next').classList.add('end');
         }
@@ -83,6 +78,14 @@ $(document).ready(function () {
         // this adds the active class to the next questions circle.
         if (pageNum != el.length) {
             el[pageNum].classList.add('active');
+        }
+
+
+        // checks if you've completed the quiz 
+        if (comparePageNum == 13) {
+            questionPage.innerHTML = `congrats on completing the quiz <br> <span>your score is : ${score}/${pageNum}</span>`
+            const test = $('.checkbox').empty()
+            console.log(`length ${el.length} \n page number ${pageNum} \n comparePageNum ${comparePageNum} \n score ${score}`);
         }
     }
 
@@ -114,8 +117,6 @@ $(document).ready(function () {
             })
         }
     }
-
-
 
     // gets the data then loads the first page.
     request();
