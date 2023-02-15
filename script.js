@@ -41,6 +41,7 @@ $(document).ready(function () {
         }
     }
 
+    //
     function removeActiveClasses() {
         if (comparePageNum === 12) {
             questionPage.innerHTML = `congrats on completing the quiz <br> <span>your score is : ${score}/${pageNum}</span>`
