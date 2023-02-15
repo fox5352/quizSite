@@ -15,54 +15,67 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="progress-container">
-            <div class="progress" id="progress"></div>
-            <div class="circle active">1</div>
-            <div class="circle">2</div>
-            <div class="circle">3</div>
-            <div class="circle">4</div>
-            <div class="circle">5</div>
-            <div class="circle">6</div>
-            <div class="circle">7</div>
-            <div class="circle">8</div>
-            <div class="circle">9</div>
-            <div class="circle">10</div>
-            <div class="circle">11</div>
-            <div class="circle">12</div>
-        </div>
-    </div>
-    <div class="content">
-        <div class="Question">testing test testing</div>
-        <br>
-        <div class="list">
-            <div class="checkbox">
-                <input class="inputbox" type="checkbox" name="one" id="one" value="one">
-                <label for="one" class="label" id="one">text 1</label><br>
-                <input class="inputbox" type="checkbox" name="two" id="two" value="two">
-                <label for="two" class="label" id="two">text 2</label><br>
-                <input class="inputbox" type="checkbox" name="three" id="three" value="three">
-                <label for="three" class="label" id="three">text 3</label><br>
-                <input class="inputbox" type="checkbox" name="four" id="four" value="four">
-                <label for="four" class="label" id="four">text 4</label>
-            </div>
-        </div>
 
-    </div>
-    <div class="footer">
-        <div class="footer-box">
-            <div class="column1">
-                <!-- <button class='btn' disabled="disabled"></button> -->
-            </div>
-            <div class="column2">
-                <button class="btn" id="next">next</button>
-            </div>
-            <div class="column3">
-                <!-- <button class='btn' disabled="disabled"></button> -->
+    <!-- The progress bar -->
+    <header>
+        <div class="container">
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="circle active">1</div>
+                <div class="circle">2</div>
+                <div class="circle">3</div>
+                <div class="circle">4</div>
+                <div class="circle">5</div>
+                <div class="circle">6</div>
+                <div class="circle">7</div>
+                <div class="circle">8</div>
+                <div class="circle">9</div>
+                <div class="circle">10</div>
+                <div class="circle">11</div>
+                <div class="circle">12</div>
             </div>
         </div>
+    </header>
 
-    </div>
+    <!-- The main section -->
+    <main>
+        <div class="content">
+            <!-- the question is added here -->
+            <div class="Question">testing test testing</div>
+
+            <!-- the answer's are added here -->
+            <div class="list">
+                <div class="checkbox">
+                    <input class="inputbox" type="checkbox" name="one" id="one" value="one">
+                    <label for="one" class="label" id="one">text 1</label><br>
+                    <input class="inputbox" type="checkbox" name="two" id="two" value="two">
+                    <label for="two" class="label" id="two">text 2</label><br>
+                    <input class="inputbox" type="checkbox" name="three" id="three" value="three">
+                    <label for="three" class="label" id="three">text 3</label><br>
+                    <input class="inputbox" type="checkbox" name="four" id="four" value="four">
+                    <label for="four" class="label" id="four">text 4</label>
+                </div>
+            </div>
+    </main>
+
+    <!-- The footer  -->
+    <footer>
+        <!-- the buttons goes here -->
+        <div class="footer">
+            <div class="footer-box">
+                <div class="column1">
+                    <!-- <button class='btn' disabled="disabled"></button> -->
+                </div>
+                <div class="column2">
+                    <button class="btn" id="next">next</button>
+                </div>
+                <div class="column3">
+                    <!-- <button class='btn' disabled="disabled"></button> -->
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
     <script src="jquery-3.6.1.min.js"></script>
     <script src="script.js"></script>

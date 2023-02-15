@@ -1,7 +1,7 @@
 {
-    "qestion1": [
+    "question1": [
         {
-            "qestion": "inside which HTML element do we put JavaScript in?",
+            "question": "inside which HTML element do we put JavaScript in?",
             "one": "<js>",
             "two": "<script>",
             "three": "<scripting>",
@@ -9,19 +9,19 @@
             "answer": "two"
         }
     ],
-    "qestion2": [
+    "question2": [
         {
-            "qestion": "What is the correct JavaScript syntax to change the content of the HTML element below <br> <div id=demo> <-div id=demo-> hi<-div-> </div>",
-            "one": "document.getElement('p').innerHTML = \"hello world\"'",
+            "question": "What is the correct JavaScript syntax to change the content of the HTML element below <br> <div id=demo> <-div id=demo-> hi<-div-> </div>",
+            "one": "document.getElement('p').innerHTML = \"hello world\"",
             "two": "document.getElementByName('p').innerHTML = \"hello world\";",
             "three": "document.getElementByid('demo').innerHTML = \"hello world\";",
             "four": "#demo.innerHTML = \"hello world\";",
             "answer": "three"
         }
     ],
-    "qestion3": [
+    "question3": [
         {
-            "qestion": "where is the correct place to insert a JavaScript?",
+            "question": "where is the correct place to insert a JavaScript?",
             "one": "The <head> section",
             "two": "Both the <head> section and the <body> section",
             "three": "The <body> section",
@@ -29,9 +29,9 @@
             "answer": "two"
         }
     ],
-    "qestion4": [
+    "question4": [
         {
-            "qestion": "What is the correct syntax for referring to an external script called 'xxx.js'",
+            "question": "What is the correct syntax for referring to an external script called 'xxx.js'",
             "one": "<script herf='xxx.js'>",
             "two": "<script src='xxx.js'>",
             "three": "<script name='xxx.js'>",
@@ -39,9 +39,9 @@
             "answer": "two"
         }
     ],
-    "qestion5": [
+    "question5": [
         {
-            "qestion": "How do you write 'hello world' in a alert box?",
+            "question": "How do you write 'hello world' in a alert box?",
             "one": "alertBOx('hello world')",
             "two": "msgBox('hello world')",
             "three": "msg('hello world')",
@@ -49,9 +49,9 @@
             "answer": "four"
         }
     ],
-    "qestion6": [
+    "question6": [
         {
-            "qestion": "How do you create a function in JavaScript",
+            "question": "How do you create a function in JavaScript",
             "one": "function = myFunction()",
             "two": "function myFunction()",
             "three": "function:myFunction()",
@@ -59,9 +59,9 @@
             "answer": "two"
         }
     ],
-    "qestion7": [
+    "question7": [
         {
-            "qestion": "How to write an if statment for executing some code if 'i' is not equal to 5",
+            "question": "How to write an if statment for executing some code if 'i' is not equal to 5",
             "one": "if (1<>5)",
             "two": "if i=!5 then",
             "three": "if (i !=5)",
@@ -69,9 +69,9 @@
             "answer": "three"
         }
     ],
-    "qestion8": [
+    "question8": [
         {
-            "qestion": "How does a While loop start?",
+            "question": "How does a While loop start?",
             "one": "while (i<=10)",
             "two": "while (i<= 10; i++)",
             "three": "while i = 1 to 10",
@@ -79,9 +79,9 @@
             "answer": "one"
         }
     ],
-    "qestion9": [
+    "question9": [
         {
-            "qestion": "how does a foor loop start?",
+            "question": "how does a foor loop start?",
             "one": "for (i <= 5; i++)",
             "two": "for (i = 0; i <= 5)",
             "three": "for i = 1 to 5",
@@ -89,9 +89,9 @@
             "answer": "four"
         }
     ],
-    "qestion10": [
+    "question10": [
         {
-            "qestion": "How can you add a comment in JavaScript?",
+            "question": "How can you add a comment in JavaScript?",
             "one": "'this is a comment",
             "two": "<!--this is a comment-->",
             "three": "//this is a comment",
@@ -99,9 +99,9 @@
             "answer": "three"
         }
     ],
-    "qestion11": [
+    "question11": [
         {
-            "qestion": "How to insert a comment that has more than one line",
+            "question": "How to insert a comment that has more than one line",
             "one": "//this is a comment has more than one line//",
             "two": "/*this is a comment has more than one line*/",
             "three": "<!--this is a comment has more than one line-->",
@@ -109,9 +109,9 @@
             "answer": "two"
         }
     ],
-    "qestion12": [
+    "question12": [
         {
-            "qestion": "What is the correct way to write a JavaScript array?",
+            "question": "What is the correct way to write a JavaScript array?",
             "one": "var colors = 'red', 'green', 'blue'",
             "two": "var colors = ('red', 'green', 'blue')",
             "three": "var colors = ['red', 'green', 'blue']",

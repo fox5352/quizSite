@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    "use strict";
+    // the elements are assigned here
     const el = document.querySelectorAll('.circle');
     const questionPage = document.querySelector('.Question');
     const checkbox = document.querySelectorAll('.inputbox')
@@ -16,6 +16,7 @@ $(document).ready(function () {
     let response = new Object
 
 
+    // gets the json object and assign's it to data then calls pageload()
     async function request() {
         data = await fetch('listOfQuestions.json').then(response => response.json());
         pageload();
@@ -25,7 +26,7 @@ $(document).ready(function () {
         randNum = 0
         if (pageNum < 12) {
             let checkbox = $('.inputbox');
-            let answer = data["qestion" + String(comparePageNum)][0]['answer'];
+            let answer = data["question" + String(comparePageNum)][0]['answer'];
             for (let i = 0; i < checkbox.length; i++) {
                 if (checkbox[i].checked) {
                     if (checkbox[i].name == answer) {
@@ -67,16 +68,18 @@ $(document).ready(function () {
         }
     }
 
+    // check to see if the questioner is at the not at the end then adds the question and answers to the page
     function pageload() {
         // questionPage.innerHTML 
         if (pageNum < 12) {
-            questionPage.innerHTML = data["qestion" + String(comparePageNum)][0]["qestion"]
+            questionPage.innerHTML = data["question" + String(comparePageNum)][0]["question"]
             labels.forEach(label => {
-                label.innerText = data["qestion" + String(comparePageNum)][0][label.id]
+                label.innerText = data["question" + String(comparePageNum)][0][label.id]
             })
         }
     }
 
+    // 
     function update() {
         const actives = document.querySelectorAll('.true');
         const progress = document.getElementById('progress');
@@ -87,12 +90,13 @@ $(document).ready(function () {
         pageload();
     }
 
+    // Onstart this function is the first to run and start's the cycle.
     request();
 
     const btn = document.querySelector('#next');
     btn.addEventListener("click", () => {
-        getAnswer();
-        removeActiveClasses();
+        getAnswer(); // Checks if the answers is correct.
+        removeActiveClasses(); // responsible for managing the cool effects of the page
         update();
     })
 
