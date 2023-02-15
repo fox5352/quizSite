@@ -50,11 +50,11 @@ $(document).ready(function () {
     function classesManager() {
         // checks if you've completed the quiz 
         if (comparePageNum === 12) {
-            questionPage.innerHTML = `congrats on completing the quiz <br> <span>your score is : ${score}/${pageNum}</span>`
+            questionPage.innerHTML = `congrats on completing the quiz <br> <span>your score is : ${score + 1}/${pageNum + 1}</span>`
             const test = $('.checkbox').empty()
         }
         // checks to see if the page number is != to the length of the questioner
-        if (pageNum != el.length) {
+        if (pageNum <= el.length) {
             el[pageNum].classList.remove('active');// removes the active class to add it to the next element
 
 
