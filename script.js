@@ -1,9 +1,11 @@
+"use strict"
 $(document).ready(function () {
     // the elements are assigned here
     const el = document.querySelectorAll('.circle');
-    const questionPage = document.querySelector('.Question');
-    const checkbox = document.querySelectorAll('.inputbox')
-    const labels = document.querySelectorAll('label')
+    const questionPage = document.querySelector('.question-text');
+    const questionExample = document.querySelector('.example');
+    const checkbox = document.querySelectorAll('.inputbox');
+    const labels = document.querySelectorAll('label');
 
     let pageNum = 0;
     let comparePageNum = 1;
@@ -75,6 +77,7 @@ $(document).ready(function () {
         // if comparePageNum is = to the arrays length then the button's text gets change to next
         if (comparePageNum === el.length) {
             document.querySelector('#next').innerHTML = "End";
+            document.querySelector('#next').classList.add('end');
         }
 
         // this adds the active class to the next questions circle.
@@ -98,9 +101,16 @@ $(document).ready(function () {
     function pageload() {
         // questionPage.innerHTML 
         if (pageNum < 12) {
-            questionPage.innerHTML = data["question" + String(comparePageNum)][0]["question"]
+            questionPage.innerText = data["question" + String(comparePageNum)][0]["question"];
+
+            if (data["question" + String(comparePageNum)][0]["example"] != undefined) {
+                questionExample.innerText = data["question" + String(comparePageNum)][0]["example"];
+            } else {
+                questionExample.innerText = "";
+            }
+
             labels.forEach(label => {
-                label.innerText = data["question" + String(comparePageNum)][0][label.id]
+                label.innerText = data["question" + String(comparePageNum)][0][label.id];
             })
         }
     }

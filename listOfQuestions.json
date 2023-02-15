@@ -11,7 +11,8 @@
     ],
     "question2": [
         {
-            "question": "What is the correct JavaScript syntax to change the content of the HTML element below <br> <div id=demo> <-div id=demo-> hi<-div-> </div>",
+            "question": "What is the correct JavaScript syntax to change the content of the HTML element below",
+            "example": "<div id=demo></div>",
             "one": "document.getElement('p').innerHTML = \"hello world\"",
             "two": "document.getElementByName('p').innerHTML = \"hello world\";",
             "three": "document.getElementByid('demo').innerHTML = \"hello world\";",
@@ -22,6 +23,7 @@
     "question3": [
         {
             "question": "where is the correct place to insert a JavaScript?",
+            "example": "",
             "one": "The <head> section",
             "two": "Both the <head> section and the <body> section",
             "three": "The <body> section",
@@ -32,6 +34,7 @@
     "question4": [
         {
             "question": "What is the correct syntax for referring to an external script called 'xxx.js'",
+            "example": "",
             "one": "<script herf='xxx.js'>",
             "two": "<script src='xxx.js'>",
             "three": "<script name='xxx.js'>",
@@ -42,6 +45,7 @@
     "question5": [
         {
             "question": "How do you write 'hello world' in a alert box?",
+            "example": "",
             "one": "alertBOx('hello world')",
             "two": "msgBox('hello world')",
             "three": "msg('hello world')",
@@ -52,6 +56,7 @@
     "question6": [
         {
             "question": "How do you create a function in JavaScript",
+            "example": "",
             "one": "function = myFunction()",
             "two": "function myFunction()",
             "three": "function:myFunction()",
@@ -62,6 +67,7 @@
     "question7": [
         {
             "question": "How to write an if statment for executing some code if 'i' is not equal to 5",
+            "example": "",
             "one": "if (1<>5)",
             "two": "if i=!5 then",
             "three": "if (i !=5)",
@@ -72,6 +78,7 @@
     "question8": [
         {
             "question": "How does a While loop start?",
+            "example": "",
             "one": "while (i<=10)",
             "two": "while (i<= 10; i++)",
             "three": "while i = 1 to 10",
@@ -82,6 +89,7 @@
     "question9": [
         {
             "question": "how does a foor loop start?",
+            "example": "",
             "one": "for (i <= 5; i++)",
             "two": "for (i = 0; i <= 5)",
             "three": "for i = 1 to 5",
@@ -92,6 +100,7 @@
     "question10": [
         {
             "question": "How can you add a comment in JavaScript?",
+            "example": "",
             "one": "'this is a comment",
             "two": "<!--this is a comment-->",
             "three": "//this is a comment",
@@ -102,6 +111,7 @@
     "question11": [
         {
             "question": "How to insert a comment that has more than one line",
+            "example": "",
             "one": "//this is a comment has more than one line//",
             "two": "/*this is a comment has more than one line*/",
             "three": "<!--this is a comment has more than one line-->",
@@ -112,6 +122,7 @@
     "question12": [
         {
             "question": "What is the correct way to write a JavaScript array?",
+            "example": "",
             "one": "var colors = 'red', 'green', 'blue'",
             "two": "var colors = ('red', 'green', 'blue')",
             "three": "var colors = ['red', 'green', 'blue']",
