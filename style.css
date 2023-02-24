@@ -32,7 +32,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-gradient);
-    overflow-y: scroll;
+    overflow: auto;
     margin: 0;
 }
 
@@ -123,8 +123,8 @@ hr {
     font-size: 35px;
     margin: 0 auto;
     width: 35vw;
-    min-height: 85vh;
-    overflow-y: auto;
+    overflow: auto;
+    min-height: 80vh;
 }
 
 .question {
@@ -158,10 +158,6 @@ hr {
     display: flex;
     flex-direction: row;
     flex-basis: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     height: 50px;
     width: 100%;
     justify-content: center;
