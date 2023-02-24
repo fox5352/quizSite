@@ -29,9 +29,13 @@ body {
     flex-direction: column;
     font-size: 35px;
     margin: 0 auto;
-    max-width: 40vw;
+    width: 50vw;
     height: 85vh;
     overflow-y: auto;
+}
+
+.question {
+    text-align: center;
 }
 
 .list {
@@ -41,7 +45,8 @@ body {
 }
 
 .checkbox {
-    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
     text-align: left;
 }
 
@@ -147,4 +152,10 @@ body {
 .footer.column2 {
     grid-row-start: 2;
     grid-column-end: 3;
+}
+
+@media only screen and (max-width: 760px) {
+    .content {
+        width: 100%;
+    }
 }
