@@ -1,7 +1,7 @@
 {
     "question1": [
         {
-            "question": "inside which HTML element do we put JavaScript in?",
+            "question": "inside which HTML element do we put JavaScript code in?",
             "one": "<js>",
             "two": "<script>",
             "three": "<scripting>",
@@ -33,12 +33,12 @@
     ],
     "question4": [
         {
-            "question": "What is the correct syntax for referring to an external script called 'xxx.js'",
+            "question": "What is the correct syntax for referring to an external script called 'script.js'",
             "example": "",
-            "one": "<script herf='xxx.js'>",
-            "two": "<script src='xxx.js'>",
-            "three": "<script name='xxx.js'>",
-            "four": "<link scr='xxx.js'>",
+            "one": "<script herf='script.js'>",
+            "two": "<script src='script.js'>",
+            "three": "<script name='script.js'>",
+            "four": "<link scr='script.js'>",
             "answer": "two"
         }
     ],
@@ -70,7 +70,7 @@
             "example": "",
             "one": "if (1<>5)",
             "two": "if i=!5 then",
-            "three": "if (i !=5)",
+            "three": "if (i != 5)",
             "four": "if i <>5",
             "answer": "three"
         }
@@ -79,7 +79,7 @@
         {
             "question": "How does a While loop start?",
             "example": "",
-            "one": "while (i<=10)",
+            "one": "while (i <= 10)",
             "two": "while (i<= 10; i++)",
             "three": "while i = 1 to 10",
             "four": "while (i++)",
@@ -93,7 +93,7 @@
             "one": "for (i <= 5; i++)",
             "two": "for (i = 0; i <= 5)",
             "three": "for i = 1 to 5",
-            "four": "for (i = 0; i <= 5; i++)",
+            "four": "for (let i = 0; i <= 5; i++)",
             "answer": "four"
         }
     ],
@@ -103,7 +103,7 @@
             "example": "",
             "one": "'this is a comment",
             "two": "<!--this is a comment-->",
-            "three": "//this is a comment",
+            "three": "// this is a comment",
             "four": "#this is a comment",
             "answer": "three"
         }
@@ -112,9 +112,9 @@
         {
             "question": "How to insert a comment that has more than one line",
             "example": "",
-            "one": "//this is a comment has more than one line//",
-            "two": "/*this is a comment has more than one line*/",
-            "three": "<!--this is a comment has more than one line-->",
+            "one": "// this is a comment has more than one line //",
+            "two": "/* this is a comment has more than one line */",
+            "three": "<!-- this is a comment has more than one line -->",
             "four": "#this is a comment has more than one line#",
             "answer": "two"
         }
